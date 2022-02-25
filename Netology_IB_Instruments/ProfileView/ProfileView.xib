@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="ProfileView" customModule="Netology_IB_Instruments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vorratokon" translatesAutoresizingMaskIntoConstraints="NO" id="WW4-48-SaL">
+                    <rect key="frame" x="15" y="15" width="160" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="cbd-dd-7mR"/>
+                        <constraint firstAttribute="width" constant="160" id="pcY-J4-SmT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USZ-8r-iB5">
+                    <rect key="frame" x="195" y="15" width="204" height="23"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3L-oK-Qc7">
+                    <rect key="frame" x="195" y="152" width="204" height="23"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fCx-H0-H11">
+                    <rect key="frame" x="15" y="190" width="384" height="170"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="170" id="Gf6-Nc-YPz"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvj-Mq-lKx">
+                    <rect key="frame" x="195" y="84" width="204" height="23"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fCx-H0-H11" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="BB9-ZJ-2Sl"/>
+                <constraint firstItem="USZ-8r-iB5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="BYo-vn-oj6"/>
+                <constraint firstItem="fCx-H0-H11" firstAttribute="top" secondItem="WW4-48-SaL" secondAttribute="bottom" constant="15" id="JKZ-Lp-9AT"/>
+                <constraint firstAttribute="trailing" secondItem="USZ-8r-iB5" secondAttribute="trailing" constant="15" id="JXZ-mA-yc4"/>
+                <constraint firstItem="N3L-oK-Qc7" firstAttribute="top" secondItem="Wvj-Mq-lKx" secondAttribute="bottom" constant="45" id="TBx-WG-1bH"/>
+                <constraint firstAttribute="trailing" secondItem="fCx-H0-H11" secondAttribute="trailing" constant="15" id="Xyy-cD-IBC"/>
+                <constraint firstItem="Wvj-Mq-lKx" firstAttribute="leading" secondItem="WW4-48-SaL" secondAttribute="trailing" constant="20" id="cBk-PU-buI"/>
+                <constraint firstItem="WW4-48-SaL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="dhx-Ox-Dtd"/>
+                <constraint firstItem="N3L-oK-Qc7" firstAttribute="leading" secondItem="WW4-48-SaL" secondAttribute="trailing" constant="20" id="h9K-aD-9QA"/>
+                <constraint firstAttribute="trailing" secondItem="Wvj-Mq-lKx" secondAttribute="trailing" constant="15" id="hbk-8a-RB6"/>
+                <constraint firstItem="Wvj-Mq-lKx" firstAttribute="top" secondItem="USZ-8r-iB5" secondAttribute="bottom" constant="46" id="pLU-yu-mjT"/>
+                <constraint firstItem="USZ-8r-iB5" firstAttribute="leading" secondItem="WW4-48-SaL" secondAttribute="trailing" constant="20" id="pOZ-Xd-HTs"/>
+                <constraint firstAttribute="trailing" secondItem="N3L-oK-Qc7" secondAttribute="trailing" constant="15" id="sFE-Hl-Nl3"/>
+                <constraint firstItem="WW4-48-SaL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="yMZ-ru-pM7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateOfBirth" destination="Wvj-Mq-lKx" id="rmi-Fc-Lxn"/>
+                <outlet property="name" destination="USZ-8r-iB5" id="VYp-IS-Ejk"/>
+                <outlet property="placeOfBirth" destination="N3L-oK-Qc7" id="5Ft-3f-Boa"/>
+            </connections>
+            <point key="canvasLocation" x="206" y="1"/>
+        </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f0A-rc-Q9I">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="228" y="-248"/>
+        </label>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oW6-Z0-pyt">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="27.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="309" y="-369"/>
+        </label>
+    </objects>
+    <resources>
+        <image name="vorratokon" width="300" height="300"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
